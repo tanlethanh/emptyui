@@ -12,7 +12,7 @@ export default [
 			globals: { ...globals.browser, ...globals.node },
 		},
 		rules: {
-			'no-unused-vars': 'warn',
+			'no-unused-vars': 'off',
 			'no-undef': 'warn',
 			'prettier/prettier': [
 				'error',
