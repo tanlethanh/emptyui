@@ -1,14 +1,21 @@
 {
   "name": "@emptyui/portal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Tan Le",
   "license": "MIT",
-  "url": "https://github.com/tanlethanh/emptyui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tanlethanh/emptyui.git",
+    "directory": "packages/portal"
+  },
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
-  "types": "lib/esm/index.d.ts",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "build": "npm run build:esm && npm run build:cjs",
+    "build": "rimraf lib && npm run build:esm && npm run build:cjs",
     "build:esm": "tsc -p tsconfig.esm.json --outDir lib/esm",
     "build:cjs": "tsc -p tsconfig.cjs.json --outDir lib/cjs",
     "release": "yarn build && npm publish --access public"
@@ -17,5 +24,8 @@
     "@types/react": ">=18",
     "react": ">=18",
     "react-native": ">=0.72.0"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   }
 }

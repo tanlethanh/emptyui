@@ -7,8 +7,7 @@
     "moduleResolution": "node",
     "strict": true,
     "declaration": true,
-    "rootDir": ".",
-    "composite": true
+    "rootDir": "."
   },
   "include": ["*.ts", "*.tsx"],
   "exclude": ["node_modules", "lib"]
