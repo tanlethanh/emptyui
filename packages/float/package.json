@@ -1,6 +1,6 @@
 {
   "name": "@emptyui/float",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A flexible component for creating your own floating elements in React Native.",
   "author": "Tan Le",
   "license": "MIT",
