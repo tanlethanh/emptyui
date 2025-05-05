@@ -3097,6 +3097,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emptyui/float@workspace:packages/float":
+  version: 0.0.0-use.local
+  resolution: "@emptyui/float@workspace:packages/float"
+  dependencies:
+    "@emptyui/portal": "npm:^0.0.1"
+  peerDependencies:
+    "@types/react": ">=18"
+    react: ">=18"
+    react-native: ">=0.72.0"
+  languageName: unknown
+  linkType: soft
+
 "@emptyui/modal@workspace:packages/modal":
   version: 0.0.0-use.local
   resolution: "@emptyui/modal@workspace:packages/modal"
@@ -3106,6 +3118,16 @@ __metadata:
     "@types/react": ^18.2.0
     react: ^18.2.0
     react-native: ^0.72.0 || ^0.73.0
+  languageName: unknown
+  linkType: soft
+
+"@emptyui/portal@npm:^0.0.1, @emptyui/portal@workspace:packages/portal":
+  version: 0.0.0-use.local
+  resolution: "@emptyui/portal@workspace:packages/portal"
+  peerDependencies:
+    "@types/react": ">=18"
+    react: ">=18"
+    react-native: ">=0.72.0"
   languageName: unknown
   linkType: soft
 

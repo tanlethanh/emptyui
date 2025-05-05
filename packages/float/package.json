@@ -1,0 +1,15 @@
+{
+  "name": "@emptyui/float",
+  "version": "0.0.1",
+  "scripts": {
+    "release": "npm publish --access public"
+  },
+  "peerDependencies": {
+    "@types/react": ">=18",
+    "react": ">=18",
+    "react-native": ">=0.72.0"
+  },
+  "dependencies": {
+    "@emptyui/portal": "^0.0.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "esnext",
+    "jsx": "react-native",
+    "strict": true,
+    "moduleResolution": "bundler"
+  }
+}
