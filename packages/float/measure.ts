@@ -16,69 +16,69 @@ export const measurePosition = (
 	const position: Position = {};
 
 	switch (align) {
-		case Align.Center:
+		case 'center':
 			position.top = binding.height / 2 - content.height / 2;
 			position.left = binding.width / 2 - content.width / 2;
 			break;
-		case Align.TopLeft:
+		case 'top-left':
 			position.top = 0;
 			position.left = 0;
 			if (alignTarget === 'outer') position.top -= content.height;
 			break;
-		case Align.TopRight:
+		case 'top-right':
 			position.top = 0;
 			position.right = 0;
 			if (alignTarget === 'outer') position.top -= content.height;
 			break;
-		case Align.TopCenter:
+		case 'top-center':
 			position.top = 0;
 			position.left = binding.width / 2 - content.width / 2;
 			if (alignTarget === 'outer') position.top -= content.height;
 			break;
-		case Align.TopStretch:
+		case 'top-stretch':
 			position.top = 0;
 			position.left = 0;
 			position.right = 0;
 			if (alignTarget === 'outer') position.top -= content.height;
 			break;
-		case Align.BottomLeft:
+		case 'bottom-left':
 			position.bottom = 0;
 			position.left = 0;
 			if (alignTarget === 'outer') position.bottom -= content.height;
 			break;
-		case Align.BottomRight:
+		case 'bottom-right':
 			position.bottom = 0;
 			position.right = 0;
 			if (alignTarget === 'outer') position.bottom -= content.height;
 			break;
-		case Align.BottomCenter:
+		case 'bottom-center':
 			position.bottom = 0;
 			position.left = binding.width / 2 - content.width / 2;
 			if (alignTarget === 'outer') position.bottom -= content.height;
 			break;
-		case Align.BottomStretch:
+		case 'bottom-stretch':
 			position.bottom = 0;
 			position.left = 0;
 			position.right = 0;
 			if (alignTarget === 'outer') position.bottom -= content.height;
 			break;
-		case Align.LeftCenter:
+		case 'left-center':
 			position.left = 0;
 			position.top = binding.height / 2 - content.height / 2;
 			if (alignTarget === 'outer') position.left -= content.width;
 			break;
-		case Align.LeftStretch:
+		case 'left-stretch':
 			position.left = 0;
 			position.top = 0;
 			position.bottom = 0;
 			if (alignTarget === 'outer') position.left -= content.width;
 			break;
-		case Align.RightCenter:
+		case 'right-center':
 			position.top = binding.height / 2 - content.height / 2;
 			position.right = 0;
 			if (alignTarget === 'outer') position.right -= content.width;
 			break;
-		case Align.RightStretch:
+		case 'right-stretch':
 			position.right = 0;
 			position.top = 0;
 			position.bottom = 0;

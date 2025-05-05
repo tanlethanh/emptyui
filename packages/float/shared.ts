@@ -22,34 +22,37 @@ export type Position = {
  */
 export type AlignTarget = 'outer' | 'inner';
 
-export enum Align {
-	/** Align to the center of the screen, self-width */
-	Center = 'Center',
-	/** Align to the top left corner, self-width */
-	TopLeft = 'TopLeft',
-	/** Align to the top right corner, self-width */
-	TopRight = 'TopRight',
-	/** Align to the top center, self-width */
-	TopCenter = 'TopCenter',
-	/** Align to the top of the screen, stretching the width to fill the screen */
-	TopStretch = 'TopStretch',
-	/** Align to the bottom left corner, self-width */
-	BottomLeft = 'BottomLeft',
-	/** Align to the bottom right corner, self-width */
-	BottomRight = 'BottomRight',
-	/** Align to the bottom center, self-width */
-	BottomCenter = 'BottomCenter',
-	/** Align to the bottom of the screen, stretching the width to fill the screen */
-	BottomStretch = 'BottomStretch',
-	/** Align to the left center, self-height */
-	LeftCenter = 'LeftCenter',
-	/** Align to the left of the screen, stretching the height to fill the screen */
-	LeftStretch = 'LeftStretch',
-	/** Align to the right center, self-height */
-	RightCenter = 'RightCenter',
-	/** Align to the right of the screen, stretching the height to fill the screen */
-	RightStretch = 'RightStretch',
-}
+/**
+ * Specify the alignment position for floating elements.
+ *
+ * - `center`: Align to the center of the screen.
+ * - `top-left`: Align to the top left corner of the screen.
+ * - `top-right`: Align to the top right corner of the screen.
+ * - `top-center`: Align to the top center of the screen.
+ * - `top-stretch`: Align to the top of the screen, stretching the width to fill the screen.
+ * - `bottom-left`: Align to the bottom left corner of the screen.
+ * - `bottom-right`: Align to the bottom right corner of the screen.
+ * - `bottom-center`: Align to the bottom center of the screen.
+ * - `bottom-stretch`: Align to the bottom of the screen, stretching the width to fill the screen.
+ * - `left-center`: Align to the left center of the screen.
+ * - `left-stretch`: Align to the left of the screen, stretching the height to fill the screen.
+ * - `right-center`: Align to the right center of the screen.
+ * - `right-stretch`: Align to the right of the screen, stretching the height to fill the screen.
+ */
+export type Align =
+	| 'center'
+	| 'top-left'
+	| 'top-right'
+	| 'top-center'
+	| 'top-stretch'
+	| 'bottom-left'
+	| 'bottom-right'
+	| 'bottom-center'
+	| 'bottom-stretch'
+	| 'left-center'
+	| 'left-stretch'
+	| 'right-center'
+	| 'right-stretch';
 
 export const FloatBindingRefRequired = () => {
 	return new Error('bindingRef is required for relative binding');
