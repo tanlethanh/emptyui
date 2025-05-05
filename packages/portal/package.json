@@ -1,8 +1,17 @@
 {
   "name": "@emptyui/portal",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "author": "Tan Le",
+  "license": "MIT",
+  "url": "https://github.com/tanlethanh/emptyui",
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
+  "types": "lib/esm/index.d.ts",
   "scripts": {
-    "release": "npm publish --access public"
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc -p tsconfig.esm.json --outDir lib/esm",
+    "build:cjs": "tsc -p tsconfig.cjs.json --outDir lib/cjs",
+    "release": "yarn build && npm publish --access public"
   },
   "peerDependencies": {
     "@types/react": ">=18",

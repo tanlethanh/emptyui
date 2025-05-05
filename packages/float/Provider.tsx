@@ -2,7 +2,7 @@ import type { ReactNode, RefObject } from 'react';
 import { useCallback, useState } from 'react';
 import type { LayoutRectangle, View } from 'react-native';
 
-import { PortalHost } from '../Portal';
+import { PortalHost } from '@emptyui/portal';
 
 import { FloatManagerContext } from './context';
 import FloatManager from './Manager';

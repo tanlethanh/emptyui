@@ -8,7 +8,7 @@ import {
 } from 'react';
 import type { View, ViewProps } from 'react-native';
 
-import { Portal } from '../Portal';
+import { Portal } from '@emptyui/portal';
 
 import RelativeBindingFloatContainer from './BindingContainer/Relative';
 import RootBindingFloatContainer from './BindingContainer/Root';
