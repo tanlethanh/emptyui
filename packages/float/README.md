@@ -2,6 +2,10 @@
 
 A flexible Float component with pure layout measurement to create your own floating components Modal, Bottom Sheet, Dropdown, Tooltip in React Native.
 
+## Why?
+
+Most React Native floating component libraries try to do everything, making it hard to customize animations, styles, or even just the backdrop. This library provides a simple Float component that handles positioning while giving you complete freedom over animations, styles.
+
 ## Installation
 
 ```bash
@@ -14,11 +18,21 @@ yarn add @emptyui/float
 
 - 🎯 Precise positioning with multiple alignment options
 - 🔄 Relative and root binding support
-- 🎨 Customizable backdrop and overlay
-- 📱 React Native compatible
 - 🎭 Flexible enough to build various floating components
+- 📱 React Native, React Native Web
+- 🎨 Customizable backdrop and overlay
 
 ## Usage
+
+First, wrap your app with `FloatProvider`:
+
+```tsx
+import { FloatProvider } from "@emptyui/float";
+
+function App() {
+  return <FloatProvider>{/* Your app content */}</FloatProvider>;
+}
+```
 
 The `Float` component is a building block for creating various floating UI elements. Here are some examples:
 
@@ -30,7 +44,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Animated, { FadeIn } from "react-native-reanimated";
 
 function ModalExample() {
-  const floatRef = useRef(null);
+  const floatRef = useRef<Float>(null);
 
   return (
     <View>
@@ -65,7 +79,7 @@ import { View, Text, TouchableOpacity } from "react-native";
 import Animated, { FadeInUp } from "react-native-reanimated";
 
 function BottomSheetExample() {
-  const floatRef = useRef(null);
+  const floatRef = useRef<Float>(null);
 
   return (
     <View>
@@ -99,7 +113,7 @@ import { Float } from "@emptyui/float";
 import { View, Text, TouchableOpacity } from "react-native";
 
 function DropdownExample() {
-  const floatRef = useRef(null);
+  const floatRef = useRef<Float>(null);
   const triggerRef = useRef(null);
 
   return (
@@ -141,7 +155,7 @@ import { Float } from "@emptyui/float";
 import { View, Text, TouchableOpacity } from "react-native";
 
 function TooltipExample() {
-  const floatRef = useRef(null);
+  const floatRef = useRef<Float>(null);
   const triggerRef = useRef(null);
 
   return (
